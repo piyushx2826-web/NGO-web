@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EcoWell Foundation</title>
+    <link rel="shortcut icon" href="images/NEHA logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d77f9101f7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d77f9101f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script> 
+<script> 
+(function(){ 
+emailjs.init("1PfGUzB5wuBEtjojr"); 
+
+})(); 
+</script> 
+<script> 
+  document.getElementById("contact-form").addEventListener("submit", 
+function(e) { 
+    e.preventDefault(); 
+ 
+    emailjs.sendForm("service_sb3mmsr", "template_gf12lw5", this) 
+      .then(function(response) { 
+         console.log("SUCCESS!", response.status, response.text); 
+         document.getElementById("status").innerHTML = "Message sent successfully!"; 
+      }, function(error) { 
+         console.log("FAILED...", error); 
+         document.getElementById("status").innerHTML = "Failed to send message. Try again ."; 
+      }); 
+ 
+    // Optional: Clear form 
+    this.reset(); 
+  }); 
+</script>
+
+    <!-- Topbar -->
+    <header class="d-none d-lg-block">
+        <div class="container topbar d-flex justify-content-between">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                
+            </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-phone me-1"></i> 9418506929</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-envelope me-1"></i> example@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container">
+            <a class="navbar-brand p-0 m-0" href="index.html"><img src="images/NEHA logo.png" alt="NEHA Logo" width="75px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="head-bg text-center">
+        <h2>EcoWell Foundation</h2>
+        <h1 class="container">Greening the Globe, Healing the Heart - Empowering Communities for a Sustainable Tomorrow"
+        </h1>
+    </div>
+    <section class="mt-0 d-none d-lg-flex justify-content-end">
+        <div class="banner col-lg-8">
+            <div class="mission">
+                <h4 style="color: #149B4C;">Our Mission</h4>
+                <p>Socio-eonomic development fo the mountain marginalized communities and to save the environment.</p>
+            </div>
+            <div class="banner-line"></div>
+            <div class="mission">
+                <h4 style="color: #149B4C;">Our Vision</h4>
+                <p>Our vision is to create a world where the environment and human health thrive harmoniously, and every
+                    individual enjoys a high quality of life in a sustainable and equitable manner.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT Start-->
+    <section class="container d-lg-flex mt-lg-0 my-5">
+        <div class="about-content col-lg-6 col-12">
+            <h2 class="headings">About <span>EcoWell Foundation</span></h2>
+            <p class="py-2">EcoWell Foundation is a non-profit organization founded in 2025, driven by a group of enthusiastic
+                environmentalists and health professionals who share a common vision of a sustainable and healthier
+                future for all. Our team brings together experts from diverse backgrounds, including environmental
+                science, public health, conservation, education, and advocacy, to tackle the multifaceted challenges
+                facing our world today.</p>
+            <ul>
+                <h5>Our Activities</h5>
+                <li>Capacity Building-skills knowledge, and attitude.</li>
+                <li>Information Dessemination.</li>
+                <li>Research and Studies undertaking.</li>
+                <li>Networking and Mobilization</li>
+            </ul>
+        </div>
+        <div class="about-img">
+            <img src="images/about-img.png" class="img-fluid">
+        </div>
+    </section>
+    <!-- About End -->
+
+
+    <section class="break py-5 text-light text-center">
+        <div class="container py-5">
+            <h2>JOIN <span>OUR EVENT</span> & HELPING US BY DONATION</h2>
+            <small>"Saving mountains is saving life — protect the peaks, preserve the planet, and stand for a future where nature thrives."</small>
+            <div class="mt-5 d-flex gap-md-5 gap-2 justify-content-center">
+                <a href="#" class="green-btn">Join Event</a>
+                <a href="#" class="white-btn">Donate Fund</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Projects Start -->
+    <section class="container mb-5">
+        <div class="d-lg-flex justify-content-between mb-5 align-items-center">
+            <div>
+        <h2 class="headings">IMPACTFUL <span>IDEAS</span></h2>
+        <p class="ps-3">Here are some impactful ideas for nature conservation and ecosystem.</p>
+            </div>
+        <div class="text-end d-lg-block d-none">
+            <a href="projects.html" class="green-btn">See All Projects</a>
+        </div>
+        </div>
+        <div class="d-lg-flex justify-content-between gap-3 align-items-center">
+            <div class="mb-3">
+                <div class="projects">
+                    <div><img src="images/planting.jpg" alt=""></div>
+                    <div>
+                        <h5> Reforestation and Afforestation Drives</h5>
+                        <p>Prevent landslides, restore wildlife habitats, improve water retention.</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="projects">
+                    <div><img src="images/cleaning.jpg" alt=""></div>
+                    <div>
+                        <h5>Mountain Cleanup Campaigns</h5>
+                        <p>Reduces pollution, protects wildlife, promotes responsible tourism.</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="projects">
+                    <div><img src="images/ecotrack.jpg" alt=""></div>
+                    <div>
+                        <h5>Eco-Trekking and Sustainable Tourism</h5>
+                        <p>Reduces tourism impact, boosts local economy, preserves culture.</p>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+            <div>
+                <img src="C:\Users\sharm\OneDrive\Desktop\main ngo\ngo website\Neha 2.0\images\mandi.jpg" alt="" class="w-100">
+            </div>
+        </div>
+        <div class="text-center d-lg-none d-block mt-5">
+            <a href="projects.html" class="green-btn">See All Projects</a>
+        </div>
+    </section>
+    <!-- Projects End -->
+    <section class="weh position-relative">
+        <div class="container d-lg-flex flex-row-reverse justify-content-between">
+            <div class="col-lg-5">
+                <h2 class="headings">We Have Power Today<br><span class="ps-sm-4 ps-3">To Change Tomorrow!</span></h2>
+                <p>Forests are the lungs of our planet — they clean the air we breathe, filter the water we drink, and are home to over 80% of terrestrial species. Yet, every second, a forest the size of a football field disappears. Environmental degradation and deforestation are threatening biodiversity, worsening climate change, and endangering the well-being of future generations.</p>
+                <ul>
+                    <li>Support community forest management.</li>
+                    <li>Raise awareness through eco-education campaigns.</li>
+                    <li>Advocate for stronger environmental policies</li>
+                    <li>Donate or volunteer with us to strengthen the green cause.</li>
+                    <li>Let's stand together to preserve nature for the generations to come.</li>
+                </ul>
+            </div>
+            <div class="change col-lg-4 d-lg-block d-none">
+                <img src="images/about-img.png" alt="" class="w-100">
+                <img src="images/project-img.png" alt="" class="position-absolute top-50 start-50 w-100">
+            </div>
+    
+        </div>
+        <div class="position-absolute end-0 bottom-0">
+            <img src="images/leaves-bg.png" alt="">
+        </div>
+    </section>
+    <!-- ----- -->
+    <section class="break py-5 text-light text-center mt-0">
+    <div class="container py-5">
+        <h2>JOIN <span>OUR EVENT</span> & HELPING US BY DONATION</h2>
+        <div class="mt-5 d-flex gap-md-5 gap-2 justify-content-center">
+            <a href="#" class="green-btn">Join Event</a>
+            <a href="#" class="white-btn">Donate Fund</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- team -->
+<section>
+    <div class="container d-lg-flex justify-content-between mb-5 align-items-center">
+        <div>
+    <h2 class="headings">Our <span>Volunteers</span></h2>
+    <p class="ps-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, enim?</p>
+        </div>
+    <div class="text-end d-lg-block d-none">
+        <a href="about.html#team" class="green-btn">More Volunteers</a>
+    </div>
+    </div>
+    <div class="container d-flex justify-content-center flex-wrap gap-5">
+        <div class="team-col text-center">
+            <div class="member-img mb-3 mx-auto">
+                <img src="images/member-1.jpg" alt="" class="w-100">
+            </div>
+            <div>
+                <h5>Name</h5>
+                <p>Designation<br>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                
+            </div>
+        </div>
+        <!--  -->
+        <div class="team-col text-center">
+            <div class="member-img mb-3 mx-auto">
+                <img src="images/member-2.jpg" alt="" class="w-100">
+            </div>
+            <div>
+                <h5>Name</h5>
+                <p>Designation<br>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                
+            </div>
+        </div>
+        <!--  -->
+        <div class="team-col text-center">
+            <div class="member-img mb-3 mx-auto">
+                <img src="images/member-3.jpg" alt="" class="w-100">
+            </div>
+            <div>
+                <h5>Name</h5>
+                <p>Designation<br>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                
+            </div>
+        </div>
+        <!--  -->
+        <div class="team-col text-center">
+            <div class="member-img mb-3 mx-auto">
+                <img src="images/member-1.jpg" alt="" class="w-100">
+            </div>
+            <div>
+                <h5>Name</h5>
+                <p>Designation<br>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                
+            </div>
+        </div>
+    </div>
+    <div class="text-center d-lg-none d-block mt-5">
+        <a href="about.html#team" class="green-btn">More Volunteers</a>
+    </div>
+</section>
+<!-- team end -->
+
+
+
+<!-- recent stories -->
+<section class="stories bg-light mb-5 py-5">
+    <h2 class="headings text-center mb-5">Recent <span>Stories</span></h2> 
+    <div class="container d-flex justify-content-between align-items-center gap-5 flex-wrap">
+   <div class="recent">
+    <div>
+        <img src="images\flood.jpg" alt="" class="w-100">
+    </div>
+    <div class="p-3">
+        <a href=""><h5>Regulation of illegal activities.</h5></a>
+        <p>Illegal mining and unauthorised construction must be strictly prohibited through enforceable legislation. Strategic climate action plans must be developed to mitigate the impact of global warming. This includes the promotion of sustainable practices and the reduction of carbon emissions through policy and public engagement.</p>
+    </div>
+   </div>
+   <!-- ----- -->
+   <div class="recent">
+    <div>
+        <img src="images\bijlimahadev.jpg" alt="" class="w-100">
+    </div>
+    <div class="p-3">
+        <a href=""><h5>BIJLI MAHADEV</h5></a>
+        <p>Amid rising public anger, dozens of centuries-old deodar and pine trees have been cut down at the construction site of the Bijli Mahadev ropeway in Kullu district. The felling has triggered protests from environmentalists and residents who fear irreversible ecological damage.</p>
+    </div>
+   </div>
+   <!-- ----- -->
+   <div class="recent">
+    <div>
+        <img src="images\hpthreats.jpg" alt="" class="w-100">
+    </div>
+    <div class="p-3">
+        <a href=""><h5>Monsoon mayhem in Himachal</h5></a>
+        <p>135 people dead, 432 roads blocked, 540 houses fully damaged.</p>
+    </div>
+   </div>
+   <!-- ----- -->
+    </div>
+    <div class="text-center mt-5">
+        <a href="events.html#stories" class="green-btn">Learn More</a>
+    </div>
+</section>
+<!-- recent stories Ends-->
+<!-- FAQs -->
+<section class="exp py-5">
+    <div class="text-center mb-5">
+        <h2 class="headings text-center">Some General <span>Questions</span></h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, officiis.</p>
+    </div>
+    <div class="container d-lg-flex justify-content-between align-items-center gap-3">
+            <div class="accordion col-lg-6" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            labore dolore sit, eligendi voluptate possimus iure, ullam, excepturi quod similique
+                            dignissimos repellat nesciunt ipsam laudantium perspiciatis expedita quas officiis
+                            tempore.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                            officiis architecto asperiores optio error nam enim nostrum facere consectetur.
+                            Repudiandae tenetur tempora obcaecati sunt debitis accusamus sint iusto repellat veniam.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                            accusamus velit quidem recusandae voluptas laboriosam molestias, architecto placeat esse
+                            nisi cupiditate voluptate adipisci et, eos repellendus perferendis eaque tempore eius.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                            accusamus velit quidem recusandae voluptas laboriosam molestias, architecto placeat esse
+                            nisi cupiditate voluptate adipisci et, eos repellendus perferendis eaque tempore eius.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div>
+            <img src="images/about-img.png" alt="" class="w-100">
+        </div>
+    </div>
+</section>
+<!--  -->
+<section class="break2 py-5 text-light text-center">
+    <div class="container py-5">
+        <h2>JOIN <span>OUR EVENT</span> & HELPING US BY DONATION</h2>
+        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, asperiores placeat. Iure accusamus molestias ex!</small>
+        <div class="mt-5 d-flex gap-md-5 gap-2 justify-content-center">
+            <a href="#" class="green-btn">Join Event</a>
+            <a href="#" class="white-btn">Donate Fund</a>
+        </div>
+    </div>
+</section>
+
+<footer class="pt-5 text-light">
+    <div class="container">
+        <div class="d-lg-flex justify-content-between mb-3">
+        <div>
+            <img src="images/NEHA logo.png" alt="" class="mb-3">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, tempore.</p>
+        </div>
+        <ul>
+            <h5>Contact Information</h5>
+            <li><i class="fa-solid fa-location-dot"></i> <span>location, Lorem ipsum dolor sit amet.</span></li>
+            <li><i class="fa-solid fa-phone"></i> <span>9418506929, 0123456789</span></li>
+            <li><i class="fa-solid fa-envelope"></i> <span>example@gmail.com</span></li>
+        </ul>
+        <ul>
+            <h5>Support</h5>
+            <li><a href="#">Help Support</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Parent Community</a></li>
+        </ul>
+        <ul>
+            <h5>Latest Events</h5>
+            <li>
+                <a href="events.html#events">
+                <img src="images/elderly-person-children-holding-plant.jpg" alt="">
+            </a>
+            <a href="events.html#events">Event Name, Lorem ipsum dolor sit amet.<br>
+                <small>4 Sep, 2023</small>
+            </a>
+            </li>
+            <li>
+                <a href="events.html#events">
+                <img src="images/elderly-person-children-holding-plant.jpg" alt="">
+            </a>
+            <a href="events.html#events">Event Name, Lorem ipsum dolor sit amet.<br>
+                <small>4 Sep, 2023</small>
+            </a>
+            </li>
+        </ul>
+        </div>
+        <div class="d-lg-flex justify-content-between align-items-end border-top pt-3 border-1">
+            <form action="" class="mb-3">
+                <legend>Subscribe us for more update & news !!</legend>
+                <div>
+                <input type="text" name="" id="" placeholder="Enter Your Email">
+                <button>Subscribe</button>
+                </div>
+            </form>
+            <div class="text-lg-end">
+            <div class="social-media mb-3">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="policies d-flex gap-3">
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Term & Conditions</a> |
+            <a href="faqs.html">FAQs</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">All Copyrights are reserved</div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+
+</html>

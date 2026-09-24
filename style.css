@@ -1,0 +1,845 @@
+* {
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+img {
+    border-radius: 8px;
+}
+html {
+    scroll-behavior: smooth;
+}
+h5 {
+    color: #149B4C;
+}
+body a {
+    text-decoration: none;
+}
+.green-btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: inset 200px -200px 0 #149B4C;
+    transition: all .5s;
+    border: 1px solid #149B4C;
+    border-radius: 8px;
+
+}
+
+.green-btn:hover {
+    color: #149B4C;
+    box-shadow: inset 0 0 0 #149B4C;
+}
+
+.white-btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: all .5s linear;
+    border: 1px solid #fff;
+    box-shadow: inset 0 0 0 #149B4C;
+    border-radius: 8px;
+
+}
+
+.white-btn:hover {
+    color: #149B4C;
+    box-shadow: inset -200px 200px 0 #149B4C;
+    border: 1px solid #149B4C;
+    color: #fff;
+}
+
+section {
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 992px) {
+    section {
+        margin-top: 100px;
+    }
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+header {
+    background-color: #333;
+}
+
+.topbar .nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 12px;
+}
+
+.navbar {
+    background-color: #fff;
+    border-bottom: .5px solid #ccc;
+    z-index: 100;
+}
+
+.nav-item a {
+    color: #333;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.nav-item a:hover {
+    color: #149B4C;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: px;
+    color: #fff;
+    background-color: #333;
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.social-media a:hover {
+    color: #149B4C;
+}
+
+.navbar-toggler {
+    outline: 1px solid #149B4C;
+}
+
+.navbar-toggler i {
+    color: #149B4C;
+}
+
+.navbar-toggler:focus {
+    color: #149B4C;
+}
+
+.head-bg {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/elderly-person-children-holding-plant.jpg');
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+@media only screen and (min-width: 576px) {
+    .head-bg {
+        height: 60vh;
+    }
+}
+
+.head-bg h1 {
+    font-weight: 200;
+
+}
+
+.banner {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-100px);
+    padding: 20px;
+}
+
+.mission {
+    max-width: 350px;
+    height: auto;
+    padding: 20px 0;
+}
+
+.banner-line {
+    border: 1px solid #149B4C;
+    margin: 0 20px;
+}
+
+.headings {
+    color: #149B4C;
+    font-weight: bold;
+}
+
+.headings span {
+    color: #333;
+}
+
+.headings::before {
+    content: '';
+    border-left: 5px solid #149B4C;
+    padding-right: 10px;
+}
+
+/* ABOUT */
+.about-content {
+    max-width: 650px;
+}
+
+/*  */
+.weh {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .weh {
+        padding: 100px 0 150px 0;
+    }
+}
+
+.change {
+    position: relative;
+}
+
+.change img {
+    border: 5px solid #f9f9f9;
+    display: block;
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    max-width: 600px;
+}
+
+.projects h5 {
+    color: #149B4C;
+}
+
+.projects img {
+    width: 100px;
+    height: 100px;
+}
+
+.projects p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* FAQs */
+.exp {
+    width: 100%;
+    display: block;
+}
+
+.exp h5 {
+    margin-bottom: 15px;
+}
+
+
+.exp .accordion .accordion-item {
+    background-color: transparent;
+    color: #222;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.exp .accordion .accordion-header .accordion-button {
+    background-color: transparent;
+    border: none;
+    color: #222;
+}
+
+.exp .accordion .accordion-header {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.exp .accordion .accordion-header .collapsed {
+    padding-right: 0;
+    border-bottom: 1px solid #222;
+}
+
+.exp .accordion .accordion-header .accordion-button::after {
+    content: '+';
+    color: #222;
+    border-color: #222;
+    background-image: none;
+    transition: all .3s linear;
+    position: absolute;
+    right: 20px;
+    font-weight: 600;
+}
+
+.exp .accordion .accordion-header .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+    background-color: #149B4C;
+    border: none;
+    color: #fff;
+}
+
+.exp .accordion .accordion-header .accordion-button:focus::after {
+    transform: rotate(45deg);
+    color: #fff;
+}
+
+
+/* Recent Stories */
+
+
+.recent {
+    overflow: hidden;
+    flex-grow: 1;
+    flex-basis: 250px;
+    background-color: #fff;
+    border: 1px solid #149B4C;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.recent a {
+    text-decoration: none;
+    color: #149B4C;
+}
+
+.recent p {
+    font-size: 14px;
+}
+
+.recent a:hover {
+    opacity: .9;
+    color: #149B4C;
+}
+.recent img {
+    border-radius: 4px;
+}
+
+
+/*  */
+.break {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/elderly-person-children-holding-plant.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.break h2 span {
+    color: #149B4C;
+}
+
+.break2 h2 span {
+    color: #149B4C;
+}
+
+.break2 {
+    background: url(images/map.png), #333;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Team */
+.team-col {
+    flex-grow: 1;
+    flex-basis: 250px;
+    background-color: #f5f5f5;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+@media only screen and (min-width: 700px) {
+    .team-col {
+        max-width: 250px;
+    }
+}
+
+.team-col:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+.team-col h5 {
+    color: #149B4C;
+}
+
+.team-col .member-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.member-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.team-col small {
+    font-size: 12px;
+}
+
+.team-col .social-media {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.team-col .social-media a {
+    font-size: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #999;
+    padding: 0;
+}
+
+.team-col .social-media a:hover {
+    color: #fff;
+    background-color: #149B4C;
+}
+
+/* footer */
+footer {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('images/elderly-person-children-holding-plant.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s;
+}
+
+footer small {
+    font-weight: lighter;
+}
+
+footer img {
+    height: 80px;
+    width: 80px;
+}
+
+footer a:hover {
+    color: #149B4C;
+}
+
+footer a:hover small {
+    color: #fff;
+}
+
+footer p {
+    max-width: 250px;
+}
+
+footer ul li {
+    padding: 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .5s;
+}
+
+footer ul li:hover span {
+    color: #149B4C;
+}
+
+footer ul li i {
+    color: #149B4C;
+    display: block;
+}
+
+footer ul li span {
+    display: block;
+}
+
+footer h5 {
+    color: #149B4C;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+footer h5::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    bottom: -10px;
+    height: 2px;
+    background-color: #149B4C;
+}
+
+footer form div {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer form input {
+    border: none;
+    background-color: transparent;
+    padding-left: 20px;
+    color: #fff;
+    width: 100%;
+    display: block;
+}
+
+
+@media only screen and (min-width:768px) {
+    footer form div {
+        width: 400px;
+    }
+}
+
+footer form input:focus {
+    outline: none;
+}
+
+footer form button {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #149B4C;
+    color: #fff;
+}
+
+footer form legend {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+footer .social-media a {
+    background-color: #149B4C;
+    margin-right: 10px;
+}
+footer .social-media a:hover {
+    background: #fff;
+    color: #149B4C;
+}
+.policies a {
+    font-size: 15px;
+}
+
+.copyright {
+    background-color: #075a2a;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* *****Projects page***** */
+.project-head {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/banner.jpg);
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media only screen and (min-width: 576px) {
+    .project-head {
+        height: 60vh;
+    }
+}
+
+.p-foot {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(images/banner.jpg);
+    background-attachment: fixed;
+}
+
+.head-text {
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+}
+
+.head-text span {
+    color: #149B4C;
+}
+
+.head-text small {
+    font-weight: 300;
+}
+
+
+.titles {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.titles div {
+    position: absolute;
+    color: #149B4C;
+    opacity: .2;
+    font-size: 5rem;
+    font-weight: bolder;
+    top: -40px;
+    z-index: -1;
+}
+.t-right div {
+    width: 100%;
+}
+.t-right h2 {
+    padding-right: 34px;
+}
+
+.titles h2 {
+    position: relative;
+    color: #222;
+    font-size: 34px;
+    padding-left: 34px;
+    position: relative;
+}
+.project-col ul {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.project-col ul li {
+    margin-bottom: 5px;
+}
+.leaf {
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+    z-index: -1;
+}
+
+.goals {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.goals h5 {
+    color: #149B4C;
+}
+
+.goals img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 10px;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: #149B4C;
+    margin: 20px auto;
+}
+
+.us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #149B4C;
+    padding: 25px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.contact form input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #222;
+    font-weight: 300;
+    padding: 10px;
+    flex-basis: 30%;
+    flex-grow: 1;
+    min-width: 150px;
+}
+.contact form input:focus {
+    outline-color: #149B4C;
+}
+.contact form div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.contact i {
+    background-color: #149B4C;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact div {
+    margin-bottom: 20px; 
+}
+.contact form legend {
+    color: #149B4C;
+}
+
+
+.gallery img {
+	width: 100%;
+	display: block;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	transition: transform 1000ms;
+    
+}
+
+.gallery ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-content: center;
+	width: 100%;
+}
+
+.gallery figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.gallery figure::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	background: rgba(20, 155, 76, .4);
+	transform-origin: center;
+	opacity: 0;
+	transform: scale(2);
+	transition: opacity 300ms;
+}
+
+.gallery figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+	padding: 1rem;
+	color: white;
+	font-size: 1.2rem;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 600ms, transform 600ms;
+}
+
+.gallery .a:is(:hover, :focus) figure::after {
+	opacity: 1;
+}
+
+.gallery .a:is(:hover, :focus) figcaption {
+	opacity: 1;
+	transition: opacity 600ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.gallery figcaption {
+		transform: translate3d(0, 2rem, 0);
+	}
+	
+	.gallery figure::after {
+		border-radius: 50%;
+		opacity: 1;
+		transform: scale(0);
+		transition: transform 900ms;
+	}
+	
+	.gallery .a:is(:hover, :focus) figure::after {
+		transform: scale(2.5);
+	}
+
+	.gallery .a:is(:hover, :focus) figcaption {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+		transition: opacity 600ms 400ms, transform 600ms 400ms;
+	}
+
+	.gallery .a:is(:hover, :focus) img {
+		transform: scale(1.2);
+	}
+}
+/* Event */
+.events {
+    border: 1px solid #149B4C;
+    padding: 10px;
+    border-radius: 8px;
+}
+.duration {
+    font-size: 12px;
+    padding: 20px;
+}
+.duration i {
+    color: #149B4C;
+    margin-right: 5px;
+}
+.duration span {
+    margin: 0 10px;
+}
+.events p {
+    font-size: 14px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #149B4C;
+}
+.event-img {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 4px;
+    
+}
+.event-img img {
+    width: 100%;
+	display: block;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+    border-radius: 4px;
+}
+/* single project */
+.singlep-img {
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    gap: 8px;
+}
+@media only screen and (min-width: 768px) {
+
+
+.singlep-img div {
+    max-width: 150px;
+}
+}
